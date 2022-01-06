@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.3;
+  background: #e2e2e2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+span.tag {
+  border: 1px solid #999;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.5rem;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
+    "Droid Sans Mono", "Source Code Pro", monospace;
+  border-radius: 0.5rem;
+}
+
+.dragzoneWrapper {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.dragzoneWrapper.isDragging .dragzone {
+  background: #999;
+}
+
+.dragzone {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #bbb;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.dragzone input {
+  width: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+@media screen {
+  .error {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #ff0000;
+    font-size: 1.3rem;
+    position: relative;
+    margin: 1rem;
+    color: white;
+  }
+}
+
+@media screen {
+  .recipe {
+    width: 90%;
+    max-width: 960px;
+    padding: 2rem;
+    margin: 1rem auto;
+    background: white;
+    box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+.recipe img {
+  margin: 0.5rem 0;
+}
+
+ul.ingredients {
+  margin-top: 0.5rem;
+  list-style: disc;
+  margin-left: 2rem;
+}

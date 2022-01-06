@@ -1,0 +1,25 @@
+@page {
+  margin: 2cm;
+}
+
+/* Or: */
+@page :left {
+  margin: 1cm;
+}
+
+@page :right {
+  margin: 1cm;
+}
+
+/* The first page of a print can be manipulated as well */
+@page :first {
+  margin: 1cm 2cm;
+}
+
+.dragzone {
+  display: none;
+}
+
+.recipe {
+  page-break-after: always;
+}

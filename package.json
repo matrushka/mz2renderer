@@ -1,0 +1,21 @@
+{
+  "name": "mz2renderer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-xml": "^2.1.0",
+    "@parcel/transformer-xml": "^2.1.0",
+    "parcel": "^2.1.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "jszip": "^3.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "start": "yarn parcel src/index.html",
+    "build": "yarn parcel build src/index.html",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,css,json,svelte,html}'"
+  }
+}
